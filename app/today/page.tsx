@@ -13,9 +13,14 @@ export default function TodayPage() {
             Today’s Growth Brief
           </h1>
           <p className="text-sm text-gray-500">
-            Clear guidance based on your recent Twitter activity
+            Clear guidance based on your recent activity
           </p>
         </div>
+
+        {/* Reassurance */}
+        <p className="text-xs text-gray-400">
+          Based on your recent replies
+        </p>
 
         {/* Primary Insight */}
         <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
@@ -45,6 +50,37 @@ export default function TodayPage() {
             {insight.pauseToday[0]}
           </p>
         </div>
+
+        {/* Why you're seeing this */}
+        <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
+          <h3 className="text-sm font-medium text-gray-900">
+            Why you’re seeing this today
+          </h3>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Yesterday, we looked at how your replies performed.
+          </p>
+          <ul className="text-sm text-gray-600 space-y-1">
+            <li>• Replies posted earlier triggered more follow-ups</li>
+            <li>• Short, one-line replies ended conversations</li>
+            <li>• UI/UX-related replies led to profile visits</li>
+          </ul>
+        </div>
+
+        {/* Today's Focus */}
+        <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
+          <h3 className="text-sm font-medium text-gray-900">
+            Today’s focus
+          </h3>
+          <p className="text-sm text-gray-700">
+            Reply to 3 tweets using this approach.
+            Stop once you’ve done that.
+          </p>
+        </div>
+
+        {/* Tomorrow loop */}
+        <p className="text-xs text-gray-400">
+          Tomorrow’s brief will adjust based on what happens today.
+        </p>
 
         {/* Footer */}
         <div className="text-xs text-gray-400">
