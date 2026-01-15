@@ -181,7 +181,7 @@ export default function HomePage() {
             No posting permissions. No spam. Just guidance.
           </p>
           <Link
-            href="/today"
+            href="/onboarding"
             className="inline-block bg-black text-white px-8 py-3 rounded-xl text-sm font-medium"
           >
             Get today’s growth brief →
