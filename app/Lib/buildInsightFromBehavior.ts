@@ -19,16 +19,15 @@ export function buildInsightFromBehavior(
   return {
     date: new Date().toDateString(),
     primaryInsight:
-      "Replies that continue conversations and arrive early are driving growth",
+      "Your replies grow when you respond early and ask a follow-up — not when you agree and move on.",
     reasoning:
       "Your highest-performing replies were early, longer, and led to back-and-forth conversations — regardless of topic.",
     doToday: [
-      "Reply within the first hour on tweets in your feed",
-      "Write replies that invite a follow-up",
-      "Focus on fewer, higher-effort replies",
+     "Reply early to one tweet and end your reply with a genuine follow-up question.",
+     "If you do more, repeat this pattern don’t change it."
     ],
     pauseToday: [
-      "One-line replies that don’t continue the conversation",
+      "Replies that close the loop instead of opening one.",
     ],
   };
 }
