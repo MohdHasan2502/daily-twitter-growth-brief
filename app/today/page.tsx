@@ -7,22 +7,20 @@ export default function TodayPage() {
     <main className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="max-w-lg w-full bg-white rounded-2xl shadow-sm p-6 space-y-8">
 
-        {/* Header */}
+        {/* HEADER */}
         <div className="space-y-1">
+          <p className="text-xs uppercase tracking-wide text-gray-400">
+            Today’s growth brief · preview
+          </p>
           <h1 className="text-2xl font-semibold tracking-tight">
-            Today’s Growth Brief
+            Here’s what would help your account today
           </h1>
           <p className="text-sm text-gray-500">
-            Clear guidance based on your recent activity
+            One clear insight based on real reply behavior.
           </p>
         </div>
 
-        {/* Reassurance */}
-        <p className="text-xs text-gray-400">
-          Based on your recent replies
-        </p>
-
-        {/* Primary Insight */}
+        {/* PRIMARY INSIGHT */}
         <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
           <h2 className="text-lg font-medium text-gray-900">
             {insight.primaryInsight}
@@ -32,7 +30,7 @@ export default function TodayPage() {
           </p>
         </div>
 
-        {/* What To Do */}
+        {/* WHAT TO DO */}
         <div className="space-y-3">
           <h3 className="font-medium text-gray-900">
             What to do today
@@ -44,47 +42,43 @@ export default function TodayPage() {
           </ul>
         </div>
 
-        {/* What to Pause */}
-        <div className="rounded-xl bg-red-50 p-4">
+        {/* WHAT TO PAUSE */}
+        <div className="rounded-xl bg-red-50 p-4 space-y-1">
+          <h4 className="text-sm font-medium text-red-800">
+            What to pause
+          </h4>
           <p className="text-sm text-red-700">
             {insight.pauseToday[0]}
           </p>
         </div>
 
-        {/* Why you're seeing this */}
-        <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
-          <h3 className="text-sm font-medium text-gray-900">
-            Why you’re seeing this today
-          </h3>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            Yesterday, we looked at how your replies performed.
-          </p>
-          <ul className="text-sm text-gray-600 space-y-1">
-            <li>• Replies posted earlier triggered more follow-ups</li>
-            <li>• Short, one-line replies ended conversations</li>
-            <li>• UI/UX-related replies led to profile visits</li>
-          </ul>
-        </div>
-
-        {/* Today's Focus */}
-        <div className="rounded-xl border bg-gray-50 p-4 space-y-2">
-          <h3 className="text-sm font-medium text-gray-900">
-            Today’s focus
-          </h3>
-          <p className="text-sm text-gray-700">
-            Reply to 3 tweets using this approach.
-            Stop once you’ve done that.
+        {/* WHY THIS EXISTS */}
+        <div className="space-y-2">
+          <h4 className="text-sm font-medium text-gray-900">
+            Why this brief exists
+          </h4>
+          <p className="text-sm text-gray-600">
+            Growth comes from replies that invite follow-ups —
+            not from replying more. This brief helps you focus
+            on what actually compounds.
           </p>
         </div>
 
-        {/* Tomorrow loop */}
-        <p className="text-xs text-gray-400">
-          Tomorrow’s brief will adjust based on what happens today.
-        </p>
+        {/* PREVIEW CLARITY */}
+        <div className="rounded-xl bg-blue-50 p-4 space-y-1">
+          <p className="text-sm text-blue-800 font-medium">
+            This is a preview.
+          </p>
+          <p className="text-sm text-blue-700">
+            As you continue, these daily briefs adapt to your
+            reply timing, depth, and conversation patterns —
+            without posting on your behalf.
+          </p>
+        </div>
 
-        {/* Footer */}
+        {/* FOOTER */}
         <div className="text-xs text-gray-400">
-          Updated {insight.date} • No posting permissions required
+          Generated for today · No posting permissions · No automation
         </div>
 
       </div>

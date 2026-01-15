@@ -12,16 +12,23 @@ export default function HomePage() {
             <br />
             Get daily reply strategies that actually work.
           </h1>
+
           <p className="text-lg text-gray-600">
-           We analyze YOUR replies, find what gets engagement, and tell you exactly what to do next.
+            We study reply behavior on Twitter, identify what drives real
+            conversations, and tell you exactly what to do next.
           </p>
 
-          <Link
-            href="/today"
-            className="inline-block bg-black text-white px-6 py-3 rounded-xl text-sm font-medium"
-          >
-           See my growth brief →
-          </Link>
+          <div className="space-y-2">
+            <Link
+              href="/today"
+              className="inline-block bg-black text-white px-6 py-3 rounded-xl text-sm font-medium"
+            >
+              See today’s growth brief →
+            </Link>
+            <p className="text-xs text-gray-500">
+              Starts with a preview • No login required
+            </p>
+          </div>
         </section>
 
         {/* PROBLEM */}
@@ -35,8 +42,8 @@ export default function HomePage() {
           </p>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>Which replies lead to conversations</li>
-            <li>When timing matters</li>
-            <li>What behavior brings followers back</li>
+            <li>When timing actually matters</li>
+            <li>What behavior brings people back to your profile</li>
           </ul>
         </section>
 
@@ -45,13 +52,13 @@ export default function HomePage() {
           <div className="space-y-2">
             <h3 className="font-medium">1. Observe</h3>
             <p className="text-sm text-gray-600">
-              We look at how your replies perform — timing, depth, and follow-ups.
+              We look at reply behavior — timing, depth, and follow-ups.
             </p>
           </div>
           <div className="space-y-2">
             <h3 className="font-medium">2. Understand</h3>
             <p className="text-sm text-gray-600">
-              Patterns are detected based on real engagement, not vanity metrics.
+              Patterns emerge from real engagement, not vanity metrics.
             </p>
           </div>
           <div className="space-y-2">
@@ -62,16 +69,35 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* PREVIEW CLARITY (IMPORTANT FIX) */}
+        <section className="max-w-3xl space-y-3">
+          <h3 className="font-medium">How this becomes personal</h3>
+          <p className="text-sm text-gray-600">
+            Day 1 starts with a sample growth brief so you can understand the
+            approach. As you continue, the guidance adapts to your reply style,
+            timing, and follow-up behavior.
+          </p>
+          <p className="text-sm text-gray-600">
+            You can connect your Twitter account when you’re ready.
+            Read-only access. No posting. Ever.
+          </p>
+        </section>
+
         {/* EXAMPLE INSIGHT */}
-        <section className="max-w-2xl bg-white p-6 rounded-2xl shadow-sm space-y-3">
-          <h3 className="font-medium">Example daily insight</h3>
-          <h3 className="text-2xl">Here’s what a real daily brief looks like:</h3>
+        <section className="max-w-2xl bg-white p-6 rounded-2xl shadow-sm space-y-4">
+          <p className="text-xs uppercase tracking-wide text-gray-400">
+            Example — daily growth brief
+          </p>
+
           <p className="text-sm text-gray-700">
             <strong>What’s working:</strong> Early replies that invite follow-ups
           </p>
+
           <p className="text-sm text-gray-700">
-            <strong>What to do today:</strong> Reply within the first hour and ask one thoughtful follow-up question
+            <strong>What to do today:</strong> Reply within the first hour and ask
+            one thoughtful follow-up question
           </p>
+
           <p className="text-sm text-red-600">
             <strong>Pause:</strong> One-line replies that don’t continue the conversation
           </p>
@@ -83,24 +109,26 @@ export default function HomePage() {
             Built for people growing from zero
           </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Have under 10k followers</li>
-            <li>Reply daily but don’t know what’s effective</li>
-            <li>Want clarity, not automation</li>
+            <li>Under 10k followers</li>
+            <li>Reply consistently but lack clarity</li>
+            <li>Want guidance, not automation</li>
           </ul>
         </section>
 
         {/* PRICING */}
         <section className="max-w-3xl bg-white p-8 rounded-2xl shadow-sm space-y-6">
           <div>
-            <h2 className="text-2xl font-semibold">One clear brief. Every day.</h2>
+            <h2 className="text-2xl font-semibold">
+              One clear brief. Every day.
+            </h2>
             <p className="text-3xl font-bold mt-2">$10 / month</p>
           </div>
 
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>A daily growth brief based on your recent activity</li>
+            <li>Daily growth brief based on real behavior</li>
             <li>Clear guidance on what to do and what to stop</li>
             <li>Focused on replies, timing, and conversation quality</li>
-            <li>No dashboards. No vanity metrics. No noise</li>
+            <li>No dashboards. No noise.</li>
           </ul>
 
           <div className="space-y-2">
@@ -111,16 +139,18 @@ export default function HomePage() {
               Get my daily growth brief →
             </Link>
             <p className="text-xs text-gray-500">
-              Cancel anytime. No posting permissions.
+              Cancel anytime • No posting permissions
             </p>
           </div>
         </section>
 
         {/* TRUST */}
         <section className="max-w-3xl space-y-4">
-          <h2 className="text-2xl font-semibold">How this earns your trust</h2>
+          <h2 className="text-2xl font-semibold">
+            How this earns your trust
+          </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Uses your activity, not generic playbooks</li>
+            <li>Behavior-based guidance, not generic playbooks</li>
             <li>Never posts or replies on your behalf</li>
             <li>You stay in control — we only guide</li>
           </ul>
@@ -129,19 +159,17 @@ export default function HomePage() {
         {/* VALIDATION */}
         <section className="max-w-3xl space-y-4">
           <h2 className="text-2xl font-semibold">
-           Built by tracking real replies, day by day
+            Built by observing real replies, day by day
           </h2>
           <p className="text-sm text-gray-700">
-            This product was built by tracking real replies from a growing account.
+            This product emerged from studying what actually caused
+            conversations and follower growth.
           </p>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Some topics triggered replies, others didn’t</li>
-            <li>Early replies led to more follow-ups</li>
-            <li>Certain reply styles brought profile visits and followers</li>
+            <li>Some reply styles triggered discussion, others didn’t</li>
+            <li>Early replies consistently led to follow-ups</li>
+            <li>Conversation depth mattered more than volume</li>
           </ul>
-          <p className="text-sm text-gray-700">
-            Today’s brief exists because these patterns repeated.
-          </p>
         </section>
 
         {/* FINAL CTA */}
@@ -156,7 +184,7 @@ export default function HomePage() {
             href="/onboarding"
             className="inline-block bg-black text-white px-8 py-3 rounded-xl text-sm font-medium"
           >
-            Get my daily growth brief →
+            Get today’s growth brief →
           </Link>
         </section>
 
