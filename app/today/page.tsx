@@ -12,9 +12,15 @@ export default function TodayPage() {
           <p className="text-lg uppercase tracking-wide text-gray-400">
             Today’s growth brief · preview
           </p>
-          <h1 className="text-2xl font-semibold tracking-tight bg-green-400 text-gray-900">
-            Here’s what would help your account today
-          </h1>
+          <p className="text-sm text-gray-500">
+  One focused growth behavior per day. Guidance compounds over time.
+</p>
+          <div className="border-l-4 border-green-400 bg-green-50/40 px-4 py-3 rounded-r-lg">
+  <h1 className="text-lg font-medium text-gray-900">
+    Here’s what would help your account today
+  </h1>
+</div>
+
           <p className="text-sm text-gray-500">
             One clear insight based on real reply behavior.
           </p>
@@ -75,6 +81,11 @@ export default function TodayPage() {
         </div>
 
         {/* FOOTER */}
+        <p className="text-xs text-gray-400">
+  This brief focuses on one growth behavior per day.
+  Insights evolve as patterns change not daily by default.
+</p>
+
         <div className="text-xs text-gray-400">
           Generated for today · No posting permissions · No automation
         </div>

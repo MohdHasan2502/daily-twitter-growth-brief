@@ -2,5 +2,9 @@ import { recentBehavior } from "./mockActivityData";
 import { buildInsightFromBehavior } from "./buildInsightFromBehavior";
 
 export function generateMockInsight() {
-  return buildInsightFromBehavior(recentBehavior);
+  const dayIndex = new Date().getDay(); // 0–6
+
+  return buildInsightFromBehavior(recentBehavior, {
+    dayIndex,
+  });
 }
