@@ -4,17 +4,23 @@ export default function TodayPage() {
   const insight = generateMockInsight();
 
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
-      <div className="max-w-lg w-full bg-white rounded-2xl shadow-sm p-6 space-y-8">
+    <main className="min-h-screen bg-gray-300 flex items-center justify-center px-4 py-12">
+      <div className="max-w-lg w-full bg-green-50 rounded-2xl shadow-sm p-6 space-y-8">
 
         {/* HEADER */}
         <div className="space-y-1">
-          <p className="text-xs uppercase tracking-wide text-gray-400">
+          <p className="text-lg uppercase tracking-wide text-gray-400">
             Today’s growth brief · preview
           </p>
-          <h1 className="text-2xl font-semibold tracking-tight">
-            Here’s what would help your account today
-          </h1>
+          <p className="text-sm text-gray-500">
+  One focused growth behavior per day. Guidance compounds over time.
+</p>
+          <div className="border-l-4 border-green-400 bg-green-50/40 px-4 py-3 rounded-r-lg">
+  <h1 className="text-lg font-medium text-gray-900">
+    Here’s what would help your account today
+  </h1>
+</div>
+
           <p className="text-sm text-gray-500">
             One clear insight based on real reply behavior.
           </p>
@@ -58,9 +64,8 @@ export default function TodayPage() {
             Why this brief exists
           </h4>
           <p className="text-sm text-gray-600">
-            Growth comes from replies that invite follow-ups —
-            not from replying more. This brief helps you focus
-            on what actually compounds.
+            You don’t need more replies. You need replies that invite a second message.
+            This brief exists to help you choose which replies are worth writing today..
           </p>
         </div>
 
@@ -70,13 +75,17 @@ export default function TodayPage() {
             This is a preview.
           </p>
           <p className="text-sm text-blue-700">
-            As you continue, these daily briefs adapt to your
-            reply timing, depth, and conversation patterns —
-            without posting on your behalf.
+            This is a preview using observed reply patterns.
+            As you continue, the brief narrows — fewer suggestions, more certainty.
           </p>
         </div>
 
         {/* FOOTER */}
+        <p className="text-xs text-gray-400">
+  This brief focuses on one growth behavior per day.
+  Insights evolve as patterns change not daily by default.
+</p>
+
         <div className="text-xs text-gray-400">
           Generated for today · No posting permissions · No automation
         </div>
